@@ -1,0 +1,18 @@
+# Class Room Tasks
+* Create the following things on the board
+  * String
+  * Number
+  * Function
+  * Object
+  * Array
+    * access an item in the array
+  * Hash
+    * access an item in the hash
+* What functions can we use on our collections?
+ * for 
+ * forEach
+ * map
+ * filter
+ * reduce
+
+

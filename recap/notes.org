@@ -1,0 +1,43 @@
+# JavaScript History
+* Created for Netscape Navigator in 1995
+* Developed by Brendan Eich in 10 Days
+* Originally called Mocha then LiveScript
+* JavaScript name was a marketing ploy to capitalize on the popularity of Java
+* Server-side scripting was also introduced in 1995. Way before it became cool with NodeJS
+* Differences in JavaScript and Microsoft's JScript led to headaches in development
+
+
+# ECMA
+* European Computer Manufacturers Association
+* Netscape submitted JavaScript to ECMA in 1996 for consideration as an industry standard
+* JavaScript and ECMAScript are the same thing
+
+# Features
+* Imperative and Structured
+  * if, while, switch, do while, for
+* Scopes
+  * var and let
+  * function and block
+* Dynamic
+  * dynamically types (no need to associate types with each variables)
+  * rebinding of variables
+* Prototype-based OOP
+  * Almost entirely object based
+    * Objects are associate arrays augmented with a prototype
+  * Prototypes are used in place of classes for inheritance
+    (__proto__)
+  * __proto__: The actual object that is used in the lookup chain. All
+    objects have this property and used by the JavaScript engine for
+    inheritance.
+  * Prototype: If I don't have a property or method that is requested of me, go
+    to the object that this field references my (i.e. my prototype) and
+    look for it.
+
+* Functions
+  * First class
+    * functions as values
+    * accepts functions as arguments
+    * returns functions
+  * Functions can have properties since they're considered as objects
+  * Nested functions & lexical clojures
+  * Anonymous functions 

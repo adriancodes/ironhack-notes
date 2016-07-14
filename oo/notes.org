@@ -1,0 +1,6 @@
+# OO
+# Creating Objects
+* Several ways to create objects in JavaScript
+  * Object literal
+  * new keyword
+  * Object.create
