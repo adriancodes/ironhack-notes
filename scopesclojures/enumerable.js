@@ -34,7 +34,6 @@ var l = (data) => console.log(data)
 //   console.log(counter--);
 // }
 
-
 // var countdown = function(value) {
 //   if (value === 0) {
 //     return value;

@@ -1,0 +1,25 @@
+# Topics
+
+# Threads
+* What is a thread?
+  * is the smallest sequence of programmed instructions that can be
+    managed independently by a scheduler
+  * thread is a subset of a process
+  * a single process can have multiple threads
+  * A single thread is processing of one command at a time.
+  * Multi threaded means multitasking, faster execution,
+    parallelization, responsiveness, better system utilization
+
+* JavaScript is single threaded
+  * Under the covers there is a thread pool
+  * Only a single thread is handling the event loop
+  * Most events are asynchronous
+  * When a new event occurs it gets added to the Event loop
+  * This loop checks the queue and processes the event one at a time
+
+* Callbacks
+  * also known as high order functions
+  * we pass them around like variables
+  * and use them as arguments to functions
+  * not executed immediately - It's "called back"
+
