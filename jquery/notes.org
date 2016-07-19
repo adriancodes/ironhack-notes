@@ -1,0 +1,68 @@
+ # DOM Notes
+
+* What is the DOM?
+  * a programming interface for HTML, XML and SVG documents. It
+    provides a structured representation of the document as a tree.
+  * provides a representation of the document as a structured group of
+    nodes and objects
+  * it is not a part of the JavaScript language. It can also be
+    accessed by other languages.
+  * a web page is a document which can be rendered on the browser or
+    as HTML Source
+  * provides way to represent, store, and manipulate the document.
+  * fully object-oriented representation of the web page.
+
+* Illustrate parent child relationships on the whiteboard
+
+* What is jQuery?
+  * JavaScript library that makes DOM traversal, manipulation, event
+    handeling, animation and AJAX calls simple.
+  * jQuery can be found on over 75% of websites
+  * Cross browser compatability and normalization
+  * jQuery UI & jQuery Mobile are additional libraries
+
+* jQuery Performance for Selectors
+
+// Slower (the zero-based :even selector is a jQuery extension)
+$( "#my-table tr:even" );
+ 
+// Better, though not exactly equivalent
+$( "#my-table tr:nth-child(odd)" );
+
+# Avoid Excessive Specificity
+$( ".data table.attendees td.gonzalez" );
+ 
+// Better: Drop the middle if possible.
+$( ".data td.gonzalez" );
+
+# ID Based Selector
+// Fast:
+$( "#container div.robotarm" );
+ 
+// Super-fast:
+$( "#container" ).find( "div.robotarm" );
+
+# Be specific on the right and less specific on the left
+// Unoptimized:
+$( "div.data .gonzalez" );
+ 
+// Optimized:
+$( ".data td.gonzalez" );
+
+$( ".buttons > *" ); // Extremely expensive.
+$( ".buttons" ).children(); // Much better.
+ 
+$( ":radio" ); // Implied universal selection.
+$( "*:radio" ); // Same thing, explicit now.
+$( "input:radio" ); // Much better.
+
+
+
+
+# <script src="my.js" type="text/javascript" defer="defer"></script>
+* scripts below at the bottom of the page
+ * defer tells the browser to download scripts after HTML has been
+   downloaded
+
+
+

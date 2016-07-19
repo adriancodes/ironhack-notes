@@ -6,11 +6,12 @@ function shout()  {
 setTimeout(shout, 1000);
 
 
-// function sleepCount() {
-//   console.log("It's been 10 seconds");
-// }
-// function sleep(seconds, callback) {
-//   setTimeout(callback, seconds * 1000)
-// }
+function sleepCount(seconds) {
+  console.log(`It's been ${seconds} seconds`);
+}
+function sleep(seconds, callback) {
+  var timer = seconds * 1000;
+  setTimeout(function(timer) {callback(timer)}, timer)
+}
 
-// sleep(10, sleepCount)
+sleep(10, sleepCount)
